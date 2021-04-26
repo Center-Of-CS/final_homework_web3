@@ -91,8 +91,7 @@ function test (){
                     <td class ="text-center">${row.date}</td>
                     <td class ="text-center">${row.note}</td>
                     <td class="text-center">
-                        <a class="btn btn-info btn-sm" href="edit_category.php?id='.base64_encode($row['id']).'" ><i class="fa  fa-edit"></i></a>
-                        
+                        <a class="btn btn-info btn-sm" href="main.php?page=editContract&edit=${row.id}" ><i class="fa  fa-edit"></i></a>
                         <a class="btn btn-danger btn-sm deleted" href="main.php?page=listContact&deleted=1&id=${row.id}" ><i class="fa  fa-trash-o"></i></a>
                     </td>
                 </tr>

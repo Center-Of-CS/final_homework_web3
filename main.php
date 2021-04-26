@@ -52,23 +52,23 @@ if(isset($_GET['logout'])){
                 switch ($page) {
 
                     case 'index':
-                        include_once("view/index.php");
+                        require_once("view/index.php");
                         break;
 
                     case 'addContact':
-                        include_once("view/addContact.php");
+                        require_once("view/addContact.php");
                         break;
 
                     case 'listContact':
-                        include_once("view/listContact.php");
+                        require_once("view/listContact.php");
                         break;
 
-                    case 'index3':
-                        include_once("index.php");
+                    case 'editContract':
+                        require_once("view/editContact.php");
                         break;
 
                     default:
-                        include_once("view/index.php");
+                        require_once("view/index.php");
                       
                   }
             ?>
